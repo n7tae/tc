@@ -1,9 +1,9 @@
 #!/bin/bash
 
-./volume test.raw frmAudio
-./volume frmAudio.dst frmDStar
-./volume frmAudio.dmr frmDMR
-./volume frmAudio.m17 frmM17
+./tc test.raw frmAudio
+./tc frmAudio.dst frmDStar
+./tc frmAudio.dmr frmDMR
+./tc frmAudio.m17 frmM17
 aplay -c1 -f S16_LE -r8000 test.raw
 aplay -c1 -f S16_LE -r8000 frmDStar.raw
 aplay -c1 -f S16_LE -r8000 frmDMR.raw
