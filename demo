@@ -4,7 +4,7 @@
 ./volume frmAudio.dst frmDStar
 ./volume frmAudio.dmr frmDMR
 ./volume frmAudio.m17 frmM17
-aplay test.raw
-aplay frmDStar.raw
-aplay frmDMR.raw
-aplay frmM17.raw
+aplay -c1 -f S16_LE -r8000 test.raw
+aplay -c1 -f S16_LE -r8000 frmDStar.raw
+aplay -c1 -f S16_LE -r8000 frmDMR.raw
+aplay -c1 -f S16_LE -r8000 frmM17.raw
