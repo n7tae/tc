@@ -1,4 +1,7 @@
-# Prerequisites
+#vscode
+.vscode
+
+:# Prerequisites
 *.d
 
 # Compiled Object files
