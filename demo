@@ -1,0 +1,10 @@
+#!/bin/bash
+
+./volume test.raw frmAudio
+./volume frmAudio.dst frmDStar
+./volume frmAudio.dmr frmDMR
+./volume frmAudio.m17 frmM17
+aplay test.raw
+aplay frmDStar.raw
+aplay frmDMR.raw
+aplay frmM17.raw
